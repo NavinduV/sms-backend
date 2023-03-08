@@ -26,7 +26,8 @@ connection.once("open", () => {
 
 const corsOptions ={
     origin: 'https://tattoo-shop-r5no.onrender.com/',
-    credentials:true,            //access-control-allow-credentials:true
+    credentials:true,            
+    access-control-allow-credentials: *,
     optionSuccessStatus:200
 }
 app.use(cors(corsOptions));
